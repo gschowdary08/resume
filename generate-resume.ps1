@@ -3,36 +3,28 @@ param(
     [string]$Role = "devops"
 )
 
-# -------------------------
-# Load Data Files
-# -------------------------
-$profile  = Get-Content data/profile.json | ConvertFrom-Json
-$skills   = (Get-Content data/skills.json | ConvertFrom-Json).$Role
-$exp      = Get-Content data/experience.json | ConvertFrom-Json
-$projects = Get-Content data/projects.json | ConvertFrom-Json
-$education = Get-Content data/education.json | ConvertFrom-Json
-$certs    = Get-Content data/certifications.json | ConvertFrom-Json
-$awards   = Get-Content data/awards.json | ConvertFrom-Json
-$template = Get-Content templates/resume.template.txt -Raw
+# Load data
+$profile   = Get-Content profile.json | ConvertFrom-Json
+$skills    = (Get-Content skills.json | ConvertFrom-Json).$Role
+$exp       = Get-Content experience.json | ConvertFrom-Json
+$projects  = Get-Content projects.json | ConvertFrom-Json
+$education = Get-Content education.json | ConvertFrom-Json
+$certs     = Get-Content certification.json | ConvertFrom-Json
+$awards    = Get-Content awards.json | ConvertFrom-Json
+$template  = Get-Content resume.templet.txt -Raw
 
-# -------------------------
-# Format Skills
-# -------------------------
+# Skills
 $skillsText = ($skills | ForEach-Object { "- $_" }) -join "`n"
 
-# -------------------------
-# Format Experience
-# -------------------------
+# Experience
 $expText = ""
 foreach ($e in $exp) {
-    $expText += "$($e.company) – $($e.role) | $($e.duration)`n"
+    $expText += "$($e.company) - $($e.role) | $($e.duration)`n"
     $expText += ($e.points | ForEach-Object { "- $_" }) -join "`n"
     $expText += "`n`n"
 }
 
-# -------------------------
-# Format Projects
-# -------------------------
+# Projects
 $projText = ""
 foreach ($p in $projects) {
     $projText += "$($p.name)`n"
@@ -40,36 +32,28 @@ foreach ($p in $projects) {
     $projText += "`n`n"
 }
 
-# -------------------------
-# Format Certifications
-# -------------------------
+# Certifications
 $certText = ($certs | ForEach-Object {
     "- $($_.name) ($($_.issuer), $($_.year))"
 }) -join "`n"
 
-# -------------------------
-# Format Education
-# -------------------------
+# Education
 $eduText = ""
 foreach ($e in $education) {
     $eduText += "$($e.degree)`n"
     $eduText += "$($e.institution) | CGPA: $($e.cgpa) | $($e.year)`n`n"
 }
 
-# -------------------------
-# Format Awards (Optional)
-# -------------------------
+# Awards (optional)
 $awardText = ""
 if ($awards -and $awards.Count -gt 0) {
     $awardText = "AWARDS`n"
     $awardText += ($awards | ForEach-Object {
-        "- $($_.title), $($_.organization) ($($_.year)) – $($_.description)"
+        "- $($_.title), $($_.organization) ($($_.year)) - $($_.description)"
     }) -join "`n"
 }
 
-# -------------------------
-# Generate Final Resume
-# -------------------------
+# Generate resume
 $output = $template `
     -replace "{{NAME}}",$profile.name `
     -replace "{{TITLE}}",$profile.title `
@@ -85,10 +69,8 @@ $output = $template `
     -replace "{{EDUCATION}}",$eduText `
     -replace "{{AWARDS}}",$awardText
 
-# -------------------------
-# Write Output File
-# -------------------------
-$outputPath = "output/resume-$Role.txt"
+# Write output
+$outputPath ="C:\Users\gscho\OneDrive\Documents\resume\resume-$Role.txt"
 $output | Out-File $outputPath -Encoding UTF8
 
 Write-Host "Resume generated successfully: $outputPath"
