@@ -1,0 +1,14 @@
+[
+  {
+    "name": "AWS Certified Solutions Architect – Associate",
+    "issuer": "Amazon Web Services",
+    "year": "2023",
+    "priority": "high"
+  },
+  {
+    "name": "Search Optimization Certified",
+    "issuer": "Splunk",
+    "year": "2025",
+    "priority": "medium"
+  }
+]
