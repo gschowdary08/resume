@@ -1,0 +1,52 @@
+﻿Sandeep Chowdary Gonuguntla
+AWS DevOps Engineer | 4+ Years Experience
+Bangalore, India | +91-9515283509 | gschowdary08@gmail.com
+LinkedIn: linkedin.com/in/sandeep-chowdari-gonuguntla-2355b4163
+
+PROFESSIONAL SUMMARY
+AWS DevOps Engineer with 4+ years of experience designing, automating, and managing scalable cloud infrastructure on AWS. Strong expertise in Terraform, Jenkins, Docker, and Amazon EKS.
+
+TECHNICAL SKILLS
+- 
+
+PROFESSIONAL EXPERIENCE
+Tata Consultancy Services (TCS) - DevOps Engineer | Apr 2023 â€“ Present
+- Designed and managed scalable AWS infrastructure using EC2, VPC, IAM, ALB, and Auto Scaling Groups.
+- Automated infrastructure provisioning using Terraform, reducing manual effort.
+- Built Jenkins CI/CD pipelines integrated with Git.
+- Deployed containerized applications on Amazon EKS.
+- Implemented monitoring using CloudWatch, Prometheus, and Grafana.
+
+Tata Consultancy Services (TCS) - Cloud Support Engineer | Feb 2022 â€“ Apr 2023
+- Supported production AWS services including EC2, S3, RDS, IAM, and VPC.
+- Performed incident troubleshooting and root cause analysis.
+- Automated operational tasks using Shell and PowerShell scripts.
+
+
+
+PROJECTS
+AWS Infrastructure Automation
+- Designed highly available VPC architecture with public and private subnets.
+- Created reusable Terraform modules with remote state in S3 and DynamoDB.
+- Reduced provisioning time from hours to minutes.
+
+Amazon EKS Application Deployment
+- Deployed Dockerized applications on Amazon EKS.
+- Configured Kubernetes Deployments, Services, ConfigMaps, and Secrets.
+- Integrated Prometheus and Grafana for monitoring.
+
+
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect â€“ Associate (Amazon Web Services, 2023)
+- Search Optimization Certified (Splunk, 2025)
+
+EDUCATION
+B.Tech â€“ Aerospace Engineering
+Bharath University, Chennai | CGPA: 8.9 | 2017 â€“ 2021
+
+
+
+AWARDS
+- Spotlight of the Year Award, Tata Consultancy Services (2025) - Recognized for outstanding performance and significant business impact.
+

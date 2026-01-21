@@ -1,5 +1,5 @@
 param(
-    [ValidateSet("devops","sre")]
+    [ValidateSet("devops","sre","Azure")]
     [string]$Role = "devops"
 )
 

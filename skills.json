@@ -1,6 +1,6 @@
 {
   "devops": [
-    "AWS (EC2, VPC, IAM, S3, RDS, ELB, Auto Scaling, CloudWatch)",
+    "Azure",
     "Terraform",
     "Jenkins",
     "Docker",
@@ -13,7 +13,7 @@
   ],
 
   "sre": [
-    "AWS",
+    "Azure",
     "Kubernetes",
     "Monitoring & Alerting",
     "Incident Management",
