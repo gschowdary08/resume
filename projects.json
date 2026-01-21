@@ -1,0 +1,20 @@
+[
+  {
+    "name": "AWS Infrastructure Automation",
+    "type": "devops",
+    "points": [
+      "Designed highly available VPC architecture with public and private subnets.",
+      "Created reusable Terraform modules with remote state in S3 and DynamoDB.",
+      "Reduced provisioning time from hours to minutes."
+    ]
+  },
+  {
+    "name": "Amazon EKS Application Deployment",
+    "type": "devops",
+    "points": [
+      "Deployed Dockerized applications on Amazon EKS.",
+      "Configured Kubernetes Deployments, Services, ConfigMaps, and Secrets.",
+      "Integrated Prometheus and Grafana for monitoring."
+    ]
+  }
+]
