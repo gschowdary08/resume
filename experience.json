@@ -1,0 +1,26 @@
+[
+  {
+    "company": "Tata Consultancy Services (TCS)",
+    "role": "DevOps Engineer",
+    "duration": "Apr 2023 – Present",
+    "type": "devops",
+    "points": [
+      "Designed and managed scalable AWS infrastructure using EC2, VPC, IAM, ALB, and Auto Scaling Groups.",
+      "Automated infrastructure provisioning using Terraform, reducing manual effort.",
+      "Built Jenkins CI/CD pipelines integrated with Git.",
+      "Deployed containerized applications on Amazon EKS.",
+      "Implemented monitoring using CloudWatch, Prometheus, and Grafana."
+    ]
+  },
+  {
+    "company": "Tata Consultancy Services (TCS)",
+    "role": "Cloud Support Engineer",
+    "duration": "Feb 2022 – Apr 2023",
+    "type": "support",
+    "points": [
+      "Supported production AWS services including EC2, S3, RDS, IAM, and VPC.",
+      "Performed incident troubleshooting and root cause analysis.",
+      "Automated operational tasks using Shell and PowerShell scripts."
+    ]
+  }
+]
