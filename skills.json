@@ -1,0 +1,23 @@
+{
+  "devops": [
+    "AWS (EC2, VPC, IAM, S3, RDS, ELB, Auto Scaling, CloudWatch)",
+    "Terraform",
+    "Jenkins",
+    "Docker",
+    "Kubernetes (EKS)",
+    "Helm",
+    "Git, GitHub",
+    "Linux (Red Hat)",
+    "Bash, PowerShell",
+    "Prometheus, Grafana"
+  ],
+
+  "sre": [
+    "AWS",
+    "Kubernetes",
+    "Monitoring & Alerting",
+    "Incident Management",
+    "Linux Troubleshooting",
+    "Automation with Bash & PowerShell"
+  ]
+}
